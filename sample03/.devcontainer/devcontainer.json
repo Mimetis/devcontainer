@@ -57,8 +57,5 @@
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "ionut",
-	"postStartCommand": "bash .devcontainer/azure.sh",
-	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/home/ionut/.ssh,type=bind"
-	]
+	"postStartCommand": "bash .devcontainer/azure.sh"
 }
