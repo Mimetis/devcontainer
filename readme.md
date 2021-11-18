@@ -199,3 +199,20 @@ Uncomment VAULT_NAME and VAULT_SECRET_KEY
 ``` json
 "postStartCommand": "bash .devcontainer/azure.sh"
 ```
+
+GITHUB SSH ACCESS
+
+``` json
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/home/john/.ssh,type=bind"
+	],
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"irongeek.vscode-env",
+		"github.vscode-pull-request-github",
+	],
+
+```
+
+
